@@ -38,7 +38,7 @@ namespace JobWrapper
             optionSet.Add("dll=", OptionCategory.General, "DLL file path", s => dllPath = s);
             optionSet.Add("class=", OptionCategory.General, "DLL class name", s => className = s);
             optionSet.Add("method=", OptionCategory.General, "DLL method name", s => methodName = s);
-            optionSet.Add("json=", OptionCategory.General, "DLL paramter json", s => paramJson = s);
+            optionSet.Add("json=", OptionCategory.General, "DLL parameter json", s => paramJson = s);
             optionSet.Add("print", OptionCategory.General, "Show DLL information", key =>
             {
                 actionToTake = () => ShowDynamic(absoluteDllPath);
