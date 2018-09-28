@@ -33,5 +33,5 @@ JobWrapper.exe --file=TestLibrary.dll --class=TestLibrary.TestClass --method=Mul
 4. LoadDynamic函数加载对应的DLL文件，按照输入的类名称实例化类
 5. 在类实例中找到对应的函数名称，利用JavaScriptSerializer将JSON格式参数解析为Object类型对象的数组
 6. 调用类实例中对应的函数，将Object类型对象的数组传入当作执行参数。
-传入的参数使用JSON格式，测试时直接将实际参数组成的数组，没有按照JSON对象数组。如果需要按照对象形式，可参照JobParameter中定义的字段名称，使用JavaScriptSerializer解析JobParameter[]格式的JSON输入：
+传入的参数使用JSON格式，测试时直接将实际参数组成的数组['deng',30,'tianjin']。如果需要按照对象形式，可参照JobParameter中定义的字段名称，使用JavaScriptSerializer解析JobParameter[]格式的JSON输入：
 [{'value':'deng'},{'value':23},{'value':'tianjin'}]
